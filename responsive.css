@@ -1,17 +1,244 @@
-@media (max-width: 1000px){
+@media (max-width: 900px){
     header{
-        justify-content: center;
         gap: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
+    main .detalhe{
+        display: none;
+    }
+
+    main .textos h1::before{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 10px;
+        background: url(/07-projeto-portfolio/img/detalhe.svg)no-repeat center;
+        top: -10px;
+    }
+
+    section h2{
+       font-size: 1.250rem; 
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    section h1{
+        font-size: 6rem;
+        word-break: keep-all;
+        max-width: none;
+        align-self: center;
+        color: #141414;
+    }
+
+    article .formacao-dados{
+        display: flex;
+        flex-direction: column;
+    }
+
+    article h1{
+        word-break: keep-all;
+        max-width: none;
+        align-self: center;
+        color: wheat;
+        font-size: 6rem;
+    }
+    
+    .formacao-dados .cursos_intensivos1::before,
+    .formacao-dados .cursos_intensivos::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 25px;
+        height: 25px;
+        background: url(/07-projeto-portfolio/img/idiomas.svg);
+        left: 75px;
+        top: -3px;
+    }
+
+    .formacao-dados .cursos_intensivos::before{
+        background: url(/07-projeto-portfolio/img/cursos.svg);
+        left: 145px;
+        top: -3px;
+    }
+}
+
+
+@media (max-width: 750px){
+
+    main{
+        display: flex;
+    }
+
+    main .textos h1{
+        font-size: 2rem;
+        justify-self: flex-start;
+    }
+
+    main img{
+        max-width: 30%;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    section h1::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 8px;
+        background: url(/07-projeto-portfolio/img/detalhe.svg)no-repeat center;
+        bottom: -5px;
+        right: 0px;
+    }
+
+    .resumo .ano{
+        display: none;
+    }
+
+    article h1::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 8px;
+        background: url(/07-projeto-portfolio/img/detalhe.svg)no-repeat center;
+        bottom: -5px;
+        right: 0px;
+    }
+
+    .formacao2 .intensivos{
+        margin: 10px;
+    }
+
+    .formacao2 .intensivos{
+        font-size: 0.875rem;
+    }
+
+    footer img{
+        width: 80px;
+        display: block;
+        position: absolute;
+        top: -40px;
+        left: auto;
+    }
+}
+
+@media (max-width: 600px){
+    section h1, article h1{
+        font-size: 5rem;
+    }
+}
+
+
 @media (max-width: 500px){
-    header{
-        gap: 20px;
+    section h1, article h1{
+        font-size: 4rem;
     }
 
     header h1{
-        justify-content: center;
-        max-width: 5ch;
-        font-size: 1.75rem;
+        font-size: 2rem;
+    }
+
+    header{
+        gap: 20px;
+        padding: 20px 40px 0px 20px;
+    }
+
+    main img{
+        max-width: 50%;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        gap: 50px;
+    }
+
+    section h2, article h2{
+        font-size: 1rem;
+    }
+
+    .resumo .trabalhos .primeiro{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .primeiro .resumo{
+        margin-bottom: 10px;
+    }
+
+    .formacao-dados .cursos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .curso1{
+        display: grid;
+    }
+
+    .formacao2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .contatos{
+        display: flex;
+        flex-direction: row;
+        margin-right: 10px;
+    }
+
+    .contatos a{
+        margin: 10px;
     }
 }
+
+@media (max-width: 500px){
+    section h1, article h1{
+        font-size: 3rem;
+        gap: 10px;
+    }
+
+    article .formacao-dados{
+        gap: 40px;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 450px){
+    .contatos{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 350px){
+    header h1{
+        text-align: center;
+    }
+}
+
+/* *{
+    border: solid black 0.5px;
+} */
