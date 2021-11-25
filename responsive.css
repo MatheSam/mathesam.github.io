@@ -1,0 +1,17 @@
+@media (max-width: 1000px){
+    header{
+        justify-content: center;
+        gap: 40px;
+    }
+
+@media (max-width: 500px){
+    header{
+        gap: 20px;
+    }
+
+    header h1{
+        justify-content: center;
+        max-width: 5ch;
+        font-size: 1.75rem;
+    }
+}
